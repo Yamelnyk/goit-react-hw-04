@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getImages } from "../../api";
+import ImageGallery from "../ImageGallery/ImageGallery";
 
 export default function App() {
     const [images, setImages] = useState([]);
@@ -12,7 +13,11 @@ export default function App() {
     }, []);
 
     return (
-        <h1></h1>
+        <div>
+           {images.length > 0 && <ImageGallery items={images}/>} 
+        </div>
     );
     
 }
+
+
