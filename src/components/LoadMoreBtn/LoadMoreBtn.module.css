@@ -1,0 +1,10 @@
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border: 2px solid rgb(54, 53, 53);
+    border-radius: 5px;
+    background-color: #b1c1e3;
+    height: 40px
+}

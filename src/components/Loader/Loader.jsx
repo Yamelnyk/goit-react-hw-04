@@ -1,7 +1,9 @@
 import { RotatingLines } from 'react-loader-spinner'  
+import css from './Loader.module.css'
 
 export default function Loader() {
-   return( <RotatingLines
+  return (<div className={css.loader}>
+    <RotatingLines
   visible={true}
   height="45"
   width="45"
@@ -11,6 +13,6 @@ export default function Loader() {
   ariaLabel="rotating-lines-loading"
   wrapperStyle={{}}
   wrapperClass=""
-  /> ) 
+  /></div> ) 
 }
 

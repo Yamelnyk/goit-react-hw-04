@@ -7,6 +7,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
 // import Modal from 'react-modal';
 import ImageModal from "../ImageModal/ImageModal";
+import css from "./App.module.css"
 
 
 
@@ -54,8 +55,8 @@ export default function App() {
         setPage(page + 1);
     }
     
-    function openModal(small) {
-        setSelectedImage(small);
+    function openModal(imageUrl) {
+        setSelectedImage(imageUrl);
         setIsOpen(true);
         
     }
@@ -74,7 +75,7 @@ export default function App() {
             {isLoading && <Loader />} 
             {isError && <ErrorMessage />}
             {images.length > 0 && !isLoading && <LoadMoreBtn onClick={handleLoadMore} />}
-            <ImageModal isOpen={modalIsOpen} onClose={closeModal} />
+            <ImageModal isOpen={modalIsOpen} onClose={closeModal} imageUrl={selectedImage}/>
         </div>
     );
     

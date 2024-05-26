@@ -7,10 +7,9 @@ export const getImages = async (searchImg, currentPage) => {
     params: {
       query: searchImg,
       page: currentPage,
-      per_page: 6,
+      per_page: 16,
       client_id: "QcVhui7T7-BUrfPP8J0YZEHkTvKxXyWuGQiyeOQpiPs",
     },
   });
-  console.log(response.data.results);
   return response.data.results;
 };

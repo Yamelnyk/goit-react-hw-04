@@ -1,0 +1,22 @@
+.header {
+    background-color: rgb(139, 157, 237);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 40px
+}
+
+.input, .btn {
+    border: 2px solid rgb(54, 53, 53);
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #b1c1e3;
+}
