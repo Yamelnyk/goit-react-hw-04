@@ -1,13 +1,14 @@
 
 import ImageCard from "../ImageCard/ImageCard";
 
-export default function ImageGallery({ items }) {
+export default function ImageGallery({ items, isOpen}) {
+
     return (
         <ul>
             {items.map((item) => {
-                <li key={item.id}>
-                    <ImageCard data={item}/>
-                </li>
+                return (<li key={item.id}>
+                   <ImageCard data={item} onClick={isOpen} />
+                </li>) 
             })}
         </ul>
     )
